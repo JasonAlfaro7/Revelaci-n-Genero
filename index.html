@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Revelación de Género 🐝</title>
+  <meta name="description" content="Invitación, información, confirmación (RSVP) y votación para la revelación de género." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="theme-color" content="#FFD84D" />
+</head>
+<body>
+  <div class="bg" aria-hidden="true">
+    <div class="bg__honey"></div>
+    <div class="bg__pattern"></div>
+    <div class="bg__bees">
+      <span class="bee bee--1" aria-hidden="true"></span>
+      <span class="bee bee--2" aria-hidden="true"></span>
+      <span class="bee bee--3" aria-hidden="true"></span>
+      <span class="bee bee--4" aria-hidden="true"></span>
+    </div>
+  </div>
+
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <span class="brand__mark">🐝</span>
+        <span class="brand__text">Revelación de Género</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#info">Info</a>
+        <a href="#rsvp">Confirmar</a>
+        <a href="#vota">Votación</a>
+        <a href="#preguntas">FAQ</a>
+      </nav>
+
+      <button class="icon-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">
+        <span class="icon-btn__bar"></span>
+        <span class="icon-btn__bar"></span>
+        <span class="icon-btn__bar"></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <div class="container mobile-nav__inner">
+        <a href="#info">Info</a>
+        <a href="#rsvp">Confirmar</a>
+        <a href="#vota">Votación</a>
+        <a href="#preguntas">FAQ</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="pill">¡Estás invitad@! 🍯</p>
+          <h1 class="hero__title">Ven a descubrir<br><span class="gradient">si es niño o niña</span></h1>
+          <p class="hero__subtitle">
+            Aquí encontrarás la info del evento, la confirmación (RSVP) y una votación divertida.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#rsvp">Confirmar asistencia</a>
+            <a class="btn btn--ghost" href="#vota">Votar predicción</a>
+          </div>
+
+          <div class="hero__stats" role="list">
+            <div class="stat" role="listitem">
+              <span class="stat__label">Fecha</span>
+              <span class="stat__value" id="evtFecha">Domingo, 22 de febrero</span>
+            </div>
+            <div class="stat" role="listitem">
+              <span class="stat__label">Hora</span>
+              <span class="stat__value" id="evtHora">4:00 p. m.</span>
+            </div>
+            <div class="stat" role="listitem">
+              <span class="stat__label">Lugar</span>
+              <span class="stat__value" id="evtLugar">Casa Alajuela</span>
+            </div>
+          </div>
+
+          <div class="note">
+            <strong>Tip:</strong> Puedes venir con un detalle amarillo/blanco 💛🤍
+          </div>
+        </div>
+
+        <div class="hero__card" aria-label="Tarjeta de cuenta regresiva">
+          <div class="card card--glow">
+            <div class="card__top">
+              <h2 class="card__title">Cuenta regresiva</h2>
+              <p class="card__muted">¡Ya casi! 🐝✨</p>
+            </div>
+
+            <div class="countdown" id="countdown" aria-live="polite">
+              <div class="cd">
+                <span class="cd__num" id="cdDays">--</span>
+                <span class="cd__lbl">días</span>
+              </div>
+              <div class="cd">
+                <span class="cd__num" id="cdHours">--</span>
+                <span class="cd__lbl">horas</span>
+              </div>
+              <div class="cd">
+                <span class="cd__num" id="cdMins">--</span>
+                <span class="cd__lbl">min</span>
+              </div>
+              <div class="cd">
+                <span class="cd__num" id="cdSecs">--</span>
+                <span class="cd__lbl">seg</span>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="mini">
+              <div class="mini__item">
+                <span class="mini__dot mini__dot--pink"></span>
+                <span>Team Rosa</span>
+              </div>
+              <div class="mini__item">
+                <span class="mini__dot mini__dot--blue"></span>
+                <span>Team Azul</span>
+              </div>
+              <div class="mini__item">
+                <span class="mini__dot mini__dot--gold"></span>
+                <span>Sorpresa</span>
+              </div>
+            </div>
+
+            <button class="btn btn--tiny" id="confettiBtn" type="button">Probar confetti 🐝</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="wave" aria-hidden="true"></div>
+    </section>
+
+    <section class="section" id="info">
+      <div class="container">
+        <div class="section__head">
+          <h2>Información del evento</h2>
+          <p>Todo lo importante en un solo lugar.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <h3>Dress code</h3>
+            <p>Si quieres, ven con algún detalle amarillo/blanco. Lo más importante: ¡tu compañía!</p>
+          </article>
+
+          <article class="card">
+            <h3>Qué llevar</h3>
+            <p>Tu mejor energía. Si deseas, trae un mensajito para el bebé (tipo tarjetita).</p>
+          </article>
+
+          <article class="card">
+            <h3>Dinámica</h3>
+            <p>Saludos, snacks y juegos… y cerramos con la gran revelación. 🍯</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="rsvp">
+      <div class="container">
+        <div class="section__head">
+          <h2>Confirmación de invitación (RSVP)</h2>
+          <p>Completa tus datos para confirmar. 💛</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Confirmar asistencia</h3>
+
+            <form class="form" id="rsvpForm">
+              <label class="field">
+                <span>Tu nombre</span>
+                <input type="text" id="guestName" placeholder="Ej: Ana García" autocomplete="name" required />
+              </label>
+
+              <label class="field">
+                <span>Número de teléfono</span>
+                <input type="tel" id="guestPhone" placeholder="Ej: 8888-8888" autocomplete="tel" required />
+              </label>
+
+              <div class="field">
+                <span>¿Asistirás?</span>
+                <div class="segmented" role="group" aria-label="Confirmación">
+                  <label class="segmented__item">
+                    <input type="radio" name="attend" value="si" checked />
+                    <span>¡Sí!</span>
+                  </label>
+                  <label class="segmented__item">
+                    <input type="radio" name="attend" value="talvez" />
+                    <span>En duda</span>
+                  </label>
+                  <label class="segmented__item">
+                    <input type="radio" name="attend" value="no" />
+                    <span>No</span>
+                  </label>
+                </div>
+              </div>
+
+              <label class="field">
+                <span>Mensaje para la familia (opcional)</span>
+                <textarea id="message" rows="3" placeholder="Escribe algo bonito 💛"></textarea>
+              </label>
+
+              <button class="btn btn--primary" type="submit">Enviar confirmación</button>
+              <p class="form__hint" id="rsvpHint" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+
+          <div class="card card--highlight">
+            <h3>Gracias 🐝</h3>
+            <div class="status" id="thanksBox">
+              <p class="muted">Cuando envíes tu confirmación, verás un resumen aquí.</p>
+            </div>
+
+            <div class="divider"></div>
+
+            <details class="details">
+              <summary>Privacidad</summary>
+              <p>
+                Esta página está hecha para que confirmes rápido. Los datos se guardan para el organizador.
+                (El panel privado está en <code>admin.html</code>).
+              </p>
+            </details>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section" id="vota">
+      <div class="container">
+        <div class="section__head">
+          <h2>Votación: ¿Cuál es tu predicción?</h2>
+          <p>Solo por diversión 😄</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Votar</h3>
+            <form class="form" id="voteForm">
+              <label class="field">
+                <span>Tu nombre (para identificar tu voto)</span>
+                <input type="text" id="voteName" placeholder="Ej: Ana" autocomplete="name" required />
+              </label>
+
+              <div class="field">
+                <span>Tu predicción</span>
+                <div class="choices">
+                  <label class="choice choice--pink">
+                    <input type="radio" name="vote" value="rosa" required />
+                    <span>Team Rosa</span>
+                  </label>
+                  <label class="choice choice--blue">
+                    <input type="radio" name="vote" value="azul" />
+                    <span>Team Azul</span>
+                  </label>
+                  <label class="choice choice--gold">
+                    <input type="radio" name="vote" value="sorpresa" />
+                    <span>Sorpresa</span>
+                  </label>
+                </div>
+              </div>
+
+              <button class="btn btn--primary" type="submit">Guardar voto</button>
+              <p class="form__hint" id="voteHint" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+
+          <div class="card">
+            <h3>Resultados (solo visible en el panel privado)</h3>
+            <p class="muted">
+              Para que nadie vea los resultados desde aquí, este bloque solo muestra un mensajito.
+              El organizador ve los resultados en <code>admin.html</code>.
+            </p>
+            <div class="status">
+              <p class="muted">🐝💛 Gracias por participar.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section section--soft" id="preguntas">
+      <div class="container">
+        <div class="section__head">
+          <h2>Preguntas frecuentes</h2>
+          <p>Por si alguien pregunta en el grupo 😅</p>
+        </div>
+
+        <div class="faq">
+          <details class="details" open>
+            <summary>¿Quién puede ver los datos?</summary>
+            <p>Solo el organizador desde el panel privado <code>admin.html</code> (con clave).</p>
+          </details>
+
+          <details class="details">
+            <summary>¿Puedo cambiar mi confirmación?</summary>
+            <p>Sí. Si envías otra vez, se actualizará tu registro (por teléfono).</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p>Hecho con cariño 🍯</p>
+        <p class="muted">Tema: amarillo + blanco + abejitas 🐝</p>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
