@@ -41,14 +41,6 @@
       </button>
     </div>
 
-    <div class="mobile-nav" id="mobileNav" hidden>
-      <div class="container mobile-nav__inner">
-        <a href="#info">Info</a>
-        <a href="#rsvp">Confirmar</a>
-        <a href="#vota">Votación</a>
-        <a href="#preguntas">FAQ</a>
-      </div>
-    </div>
   </header>
 
   <main id="inicio">
@@ -146,18 +138,18 @@
 
         <div class="grid-3">
           <article class="card">
-            <h3>Dress code</h3>
-            <p>Si quieres, ven con algún detalle amarillo/blanco. Lo más importante: ¡tu compañía!</p>
+            <h3>Info 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis mollitia cumque expedita exercitationem ullam deleniti ad doloribus deserunt non ut laudantium magni minima quis accusantium suscipit incidunt facilis, facere quisquam.</p>
           </article>
 
           <article class="card">
-            <h3>Qué llevar</h3>
-            <p>Tu mejor energía. Si deseas, trae un mensajito para el bebé (tipo tarjetita).</p>
+            <h3>Info 2</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam accusantium, sit iusto ratione nostrum exercitationem, officiis quis culpa ea facilis rerum, tenetur quidem vero fugiat eum consequuntur praesentium voluptates et.</p>
           </article>
 
           <article class="card">
-            <h3>Dinámica</h3>
-            <p>Saludos, snacks y juegos… y cerramos con la gran revelación. 🍯</p>
+            <h3>Info 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero accusantium aspernatur, et sunt vitae consectetur corporis quas placeat accusamus obcaecati at recusandae debitis magni quidem optio sint iure nihil necessitatibus?, 🍯</p>
           </article>
         </div>
       </div>
@@ -166,7 +158,7 @@
     <section class="section section--soft" id="rsvp">
       <div class="container">
         <div class="section__head">
-          <h2>Confirmación de invitación (RSVP)</h2>
+          <h2>Confirmación de invitación</h2>
           <p>Completa tus datos para confirmar. 💛</p>
         </div>
 
@@ -204,30 +196,13 @@
               </div>
 
               <label class="field">
-                <span>Mensaje para la familia (opcional)</span>
+                <span>Mensaje para bebé (opcional)</span>
                 <textarea id="message" rows="3" placeholder="Escribe algo bonito 💛"></textarea>
               </label>
 
               <button class="btn btn--primary" type="submit">Enviar confirmación</button>
               <p class="form__hint" id="rsvpHint" role="status" aria-live="polite"></p>
             </form>
-          </div>
-
-          <div class="card card--highlight">
-            <h3>Gracias 🐝</h3>
-            <div class="status" id="thanksBox">
-              <p class="muted">Cuando envíes tu confirmación, verás un resumen aquí.</p>
-            </div>
-
-            <div class="divider"></div>
-
-            <details class="details">
-              <summary>Privacidad</summary>
-              <p>
-                Esta página está hecha para que confirmes rápido. Los datos se guardan para el organizador.
-                (El panel privado está en <code>admin.html</code>).
-              </p>
-            </details>
           </div>
         </div>
 
@@ -237,8 +212,8 @@
     <section class="section" id="vota">
       <div class="container">
         <div class="section__head">
-          <h2>Votación: ¿Cuál es tu predicción?</h2>
-          <p>Solo por diversión 😄</p>
+          <h2>Votación:</h2>
+          <p>¿Cuál es tu predicción? 😄</p>
         </div>
 
         <div class="grid-2">
@@ -246,7 +221,7 @@
             <h3>Votar</h3>
             <form class="form" id="voteForm">
               <label class="field">
-                <span>Tu nombre (para identificar tu voto)</span>
+                <span>Tu nombre</span>
                 <input type="text" id="voteName" placeholder="Ej: Ana" autocomplete="name" required />
               </label>
 
@@ -274,10 +249,9 @@
           </div>
 
           <div class="card">
-            <h3>Resultados (solo visible en el panel privado)</h3>
+            <h3>Los resultados se conocerán el dia de la revelación</h3>
             <p class="muted">
-              Para que nadie vea los resultados desde aquí, este bloque solo muestra un mensajito.
-              El organizador ve los resultados en <code>admin.html</code>.
+              Para que nadie vea los resultados desde aquí.
             </p>
             <div class="status">
               <p class="muted">🐝💛 Gracias por participar.</p>
@@ -291,19 +265,19 @@
     <section class="section section--soft" id="preguntas">
       <div class="container">
         <div class="section__head">
-          <h2>Preguntas frecuentes</h2>
-          <p>Por si alguien pregunta en el grupo 😅</p>
+          <h2>Seccion de preguntas frecuentes</h2>
+          <p>Por si alguien tiene dudas 😅</p>
         </div>
 
         <div class="faq">
           <details class="details" open>
-            <summary>¿Quién puede ver los datos?</summary>
-            <p>Solo el organizador desde el panel privado <code>admin.html</code> (con clave).</p>
+            <summary>¿Cuando y donde será la revelación?</summary>
+            <p> Se realizará el domingo 22 de febrero del 2026, en Casa Alajuela</p>
           </details>
 
           <details class="details">
-            <summary>¿Puedo cambiar mi confirmación?</summary>
-            <p>Sí. Si envías otra vez, se actualizará tu registro (por teléfono).</p>
+            <summary>¿Dirección de casa Alajuela?</summary>
+            <p>Alajuela centro, Barrios San Martin 100 noroeste del antiguo puente de teneria.</p>
           </details>
         </div>
       </div>
