@@ -569,7 +569,7 @@ textarea{resize: vertical}
 }
 
 /* Responsive */
-@media (max-width: 920px){
+@media (max-width: 480px){
   .hero__grid{grid-template-columns: 1fr; }
   .nav{display:none}
   .icon-btn{display:flex}
@@ -579,4 +579,80 @@ textarea{resize: vertical}
   .timeline__item{grid-template-columns: 1fr}
   .hero__stats{grid-template-columns: 1fr; }
   .kpis{grid-template-columns: 1fr}
+}
+
+/* Mapa responsive (Google Maps iframe) */
+.map-embed{
+  margin-top: 12px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,.10);
+  background: rgba(255,255,255,.65);
+  aspect-ratio: 16 / 10; /* buen tamaño en móvil */
+  width: 100%;
+}
+
+.map-embed iframe{
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+/* 🍯 Miel visible y animada (sin interacción) */
+.card{
+  position: relative;
+  overflow: hidden;
+}
+
+/* Asegura que el contenido quede arriba */
+.card > *{
+  position: relative;
+  z-index: 2;
+}
+
+/* Capa de miel 1 */
+.card::before{
+  content:"";
+  position:absolute;
+  inset:-20%;
+  z-index: 1;
+  background:
+    radial-gradient(30px 30px at 18% 28%, rgba(255,216,77,.55), transparent 60%),
+    radial-gradient(22px 22px at 78% 38%, rgba(255,238,166,.55), transparent 62%),
+    radial-gradient(18px 18px at 42% 78%, rgba(255,216,77,.45), transparent 60%),
+    radial-gradient(14px 14px at 62% 70%, rgba(255,255,255,.45), transparent 60%);
+  filter: blur(0.2px);
+  opacity: .9;
+  animation: honeyDrift 10s ease-in-out infinite;
+  pointer-events:none;
+}
+
+/* Capa de miel 2 (brillito) */
+.card::after{
+  content:"";
+  position:absolute;
+  inset:-30%;
+  z-index: 1;
+  background:
+    radial-gradient(120px 70px at 20% 20%, rgba(255,216,77,.18), transparent 60%),
+    radial-gradient(140px 80px at 90% 70%, rgba(255,238,166,.16), transparent 62%);
+  opacity: .9;
+  animation: honeyDrift2 16s ease-in-out infinite;
+  pointer-events:none;
+}
+
+@keyframes honeyDrift{
+  0%,100%{ transform: translateX(0) translateY(0) scale(1); }
+  50%{ transform: translateX(10px) translateY(-10px) scale(1.02); }
+}
+
+@keyframes honeyDrift2{
+  0%,100%{ transform: translateX(0) translateY(0); }
+  50%{ transform: translateX(-12px) translateY(8px); }
+}
+
+/* Accesibilidad */
+@media (prefers-reduced-motion: reduce){
+  .card::before, .card::after{ animation:none; }
 }

@@ -27,13 +27,6 @@
         <span class="brand__text">Revelación de Género</span>
       </a>
 
-      <nav class="nav">
-        <a href="#info">Info</a>
-        <a href="#rsvp">Confirmar</a>
-        <a href="#vota">Votación</a>
-        <a href="#preguntas">FAQ</a>
-      </nav>
-
       <button class="icon-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">
         <span class="icon-btn__bar"></span>
         <span class="icon-btn__bar"></span>
@@ -49,9 +42,6 @@
         <div class="hero__copy">
           <p class="pill">¡Estás invitad@! 🍯</p>
           <h1 class="hero__title">Ven a descubrir<br><span class="gradient">si es niño o niña</span></h1>
-          <p class="hero__subtitle">
-            Aquí encontrarás la info del evento, la confirmación (RSVP) y una votación divertida.
-          </p>
 
           <div class="hero__cta">
             <a class="btn btn--primary" href="#rsvp">Confirmar asistencia</a>
@@ -115,10 +105,6 @@
                 <span class="mini__dot mini__dot--blue"></span>
                 <span>Team Azul</span>
               </div>
-              <div class="mini__item">
-                <span class="mini__dot mini__dot--gold"></span>
-                <span>Sorpresa</span>
-              </div>
             </div>
 
             <button class="btn btn--tiny" id="confettiBtn" type="button">Probar confetti 🐝</button>
@@ -138,19 +124,48 @@
 
         <div class="grid-3">
           <article class="card">
-            <h3>Info 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis mollitia cumque expedita exercitationem ullam deleniti ad doloribus deserunt non ut laudantium magni minima quis accusantium suscipit incidunt facilis, facere quisquam.</p>
-          </article>
+  <h3>Dinámica de la revelación</h3>
+  <p>
+    🐝💛 Queremos que seas parte de este momento tan especial y lleno de ilusión ✨<br><br>
+
+    👶💗 Si crees que será <strong>niña</strong>, puedes traer <strong>pañales</strong>.<br>
+    👶💙 Si crees que será <strong>niño</strong>, puedes traer <strong>toallitas húmedas</strong>.<br><br>
+
+    No es una obligación, solo una forma bonita y divertida de compartir nuestra alegría 🍯✨  
+    ¡Gracias por acompañarnos en esta dulce espera! 💛
+  </p>
+</article>
+
 
           <article class="card">
-            <h3>Info 2</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam accusantium, sit iusto ratione nostrum exercitationem, officiis quis culpa ea facilis rerum, tenetur quidem vero fugiat eum consequuntur praesentium voluptates et.</p>
-          </article>
+  <h3>🎉 Juegos y diversión</h3>
+  <p>
+    🐝💛 Mientras esperamos el momento más emocionante del día,
+    queremos que todos disfruten y se diviertan ✨<br><br>
+
+    🎲🧩 Tendremos <strong>juegos, dinámicas y actividades</strong> para compartir,
+    reír y pasar un rato agradable en familia y con amigos 🥳<br><br>
+
+    ⏳🎈 Así, la espera se hará más corta y llena de buenos momentos,
+    hasta llegar juntos al gran instante de la revelación 👶💛
+  </p>
+</article>
+
 
           <article class="card">
-            <h3>Info 3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero accusantium aspernatur, et sunt vitae consectetur corporis quas placeat accusamus obcaecati at recusandae debitis magni quidem optio sint iure nihil necessitatibus?, 🍯</p>
-          </article>
+  <h3>💛 Gracias por acompañarnos</h3>
+  <p>
+    🐝🍯 Queremos agradecer de corazón a cada persona que estará con nosotros
+    en este día tan especial ✨<br><br>
+
+    💕 Su presencia, cariño y apoyo significan muchísimo para nuestra familia,
+    y hacen que esta espera sea aún más bonita y llena de amor 👶💛<br><br>
+
+    🎈 Gracias por compartir nuestra alegría, nuestras risas
+    y por ser parte de este momento que recordaremos siempre 🐝✨
+  </p>
+</article>
+
         </div>
       </div>
     </section>
@@ -183,14 +198,14 @@
                   <label class="segmented__item">
                     <input type="radio" name="attend" value="si" checked />
                     <span>¡Sí!</span>
+                  </label>                  
+                  <label class="segmented__item">
+                    <input type="radio" name="attend" value="no" />
+                    <span>No</span>
                   </label>
                   <label class="segmented__item">
                     <input type="radio" name="attend" value="talvez" />
                     <span>En duda</span>
-                  </label>
-                  <label class="segmented__item">
-                    <input type="radio" name="attend" value="no" />
-                    <span>No</span>
                   </label>
                 </div>
               </div>
@@ -232,14 +247,14 @@
                     <input type="radio" name="vote" value="rosa" required />
                     <span>Team Rosa</span>
                   </label>
-                  <label class="choice choice--blue">
-                    <input type="radio" name="vote" value="azul" />
-                    <span>Team Azul</span>
-                  </label>
                   <label class="choice choice--gold">
                     <input type="radio" name="vote" value="sorpresa" />
                     <span>Sorpresa</span>
                   </label>
+                  <label class="choice choice--blue">
+                    <input type="radio" name="vote" value="azul" />
+                    <span>Team Azul</span>
+                  </label>                  
                 </div>
               </div>
 
@@ -265,7 +280,7 @@
     <section class="section section--soft" id="preguntas">
       <div class="container">
         <div class="section__head">
-          <h2>Seccion de preguntas frecuentes</h2>
+          <h2>Sección de información</h2>
           <p>Por si alguien tiene dudas 😅</p>
         </div>
 
@@ -276,17 +291,43 @@
           </details>
 
           <details class="details">
-            <summary>¿Dirección de casa Alajuela?</summary>
-            <p>Alajuela centro, Barrios San Martin 100 noroeste del antiguo puente de teneria.</p>
-          </details>
+  <summary>¿Dirección de casa Alajuela?</summary>
+
+  <p>
+    Alajuela centro, Barrio San Martín, 100 m noroeste del antiguo puente de Tenería.
+  </p>
+
+  <div class="map-embed">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d412.97370104025134!2d-84.21536386341096!3d10.02592641229927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1ses!2scr!4v1767929915551!5m2!1ses!2scr"
+    allowfullscreen
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+
+  <p style="margin-top:10px;">
+    📍
+    <a
+      href="https://www.google.com/maps?q=10.02592641229927,-84.21536386341096"
+      target="_blank"
+      rel="noopener"
+      style="font-weight:700; text-decoration:underline;"
+    >
+      Abrir en Google Maps
+    </a>
+  </p>
+</details>
+
         </div>
       </div>
     </section>
 
     <footer class="footer">
       <div class="container footer__inner">
-        <p>Hecho con cariño 🍯</p>
-        <p class="muted">Tema: amarillo + blanco + abejitas 🐝</p>
+        <p>Nos vemos para conocer a Bebé 🍯</p>
+        <p class="muted">🐝|Team Niño 👶💙 | Team Niña 👶💗|🐝</p>
       </div>
     </footer>
 
