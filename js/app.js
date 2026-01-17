@@ -1,17 +1,9 @@
-/* -----------------------------------------
-   Revelación de Género 🐝 - app.js (CORS FIX)
-   - Guardado (RSVP/Votos): sendBeacon (no requiere CORS)
-   - Lectura (admin getAll): JSONP (evita CORS)
------------------------------------------- */
 
 const EVENT = {
   fechaTexto: "Domingo, 22 de febrero",
-  horaTexto: "4:00 p. m.",
+  horaTexto: "3:00 p. m.",
   lugarTexto: "Casa Alajuela",
-  startsAtISO: "2026-02-22T16:00:00-06:00",
-
-  // 🔐 Clave para el panel privado (admin.html)
-  adminKey: "1234",
+  startsAtISO: "2026-02-22T15:00:00-06:00",
 
   // ✅ Tu API (Apps Script)
   API_URL: "https://script.google.com/macros/s/AKfycbw3ckPoJuO9OkeKL3U_QZ3tmaI03WsWJBDUgfcV5MygoU1JI58fFuLhSpP6Omyl4Uqwjw/exec",
